@@ -8,11 +8,11 @@
       "category": "beauty"
     },
     {
-      "id": "2",
       "title": "Eyeshadow Palette with Mirror",
       "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-      "price": 19.99,
-      "category": "beauty"
+      "price": "20",
+      "category": "beauty",
+      "id": "2"
     },
     {
       "title": "Powder Canister",
@@ -24,7 +24,7 @@
     {
       "title": "Red Lipstick",
       "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
-      "price": "14",
+      "price": "143",
       "category": "beauty",
       "id": "4"
     }

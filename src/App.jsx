@@ -13,12 +13,16 @@ const onHandleSetProductToEdit=(product)=>{
   setProductToEdit(product);
   setIsEdit(true)
 }
-  return (
+const resetForm = ()=>{
+setProductToEdit(null);
+setIsEdit(false)
+}
+return (
   
  
     <div className='max-w-7xl mx-auto'>
   <ProductListView onHandleSetProductToEdit={onHandleSetProductToEdit} />
-  <ProductFrorm isEdit={isEdit} productToEdit={productToEdit}/>
+  <ProductFrorm resetForm={resetForm} isEdit={isEdit} productToEdit={productToEdit}/>
    </div>
   
        

@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { createProducts, updateProducts } from "./productSlice";
 
 
-const ProductForm = ({productToEdit={},isEdit=false}) => {
+const ProductForm = ({productToEdit={},isEdit=false,resetForm}) => {
     console.log(productToEdit)
  const dispatch =useDispatch();
 
@@ -27,7 +27,7 @@ const ProductForm = ({productToEdit={},isEdit=false}) => {
     e.preventDefault();
     if(isEdit){
         dispatch(updateProducts({id: productToEdit.id, product:product}))
-        isEdit(false)
+       resetForm()
     }
     else{
            dispatch(createProducts({...product, id: nanoid()}))
