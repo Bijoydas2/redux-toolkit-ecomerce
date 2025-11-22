@@ -27,11 +27,19 @@ const ProductForm = ({productToEdit={},isEdit=false}) => {
     e.preventDefault();
     if(isEdit){
         dispatch(updateProducts({id: productToEdit.id, product:product}))
+        isEdit(false)
     }
     else{
            dispatch(createProducts({...product, id: nanoid()}))
     }
-   
+    setProduct({
+         
+    title: "",
+    price: "",
+    description: "",
+    category: "",
+    
+    })   
   };
 useEffect(() => {
   if (productToEdit) {
